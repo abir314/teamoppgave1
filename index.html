@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Frukthagen</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body onload="blinkText()">
+    <h1>Velkommen til frukthagen!</h1>
+    <button onclick="ShowAndHide()">Åpnelukk fruktsekk</button>
+    <button id="empty" onclick="empty()">Tøm sekken</button>
+    <section id="bob1">
+        
+    <p>Totalt antall frukt(er) er <span id="viseFrukt">0</span>. Du har plukket <span id="apple">0</span> eple(r), <span id="peach">0</span> pære(r) og <span id="banana">0</span> banan(er).</p>
+    <!-- <div id="vise"><button onclick="viseHide()">Se frukt valg!</button></div> -->
+    </section>
+    <br>
+    <div style="color: yellow; background-color: lightblue; font-size: x-large;" id="blinkingText">Trykk på bilde</div> 
+    
+    <img id="eple" class="frukt" onclick="leggTilFrukt('eple')" src="img/eple.gif"/>
+    <img id="pære" class="frukt" onclick="leggTilFrukt('pære')" src="img/pære.gif"/>
+    <img id="banan" class="frukt" onclick="leggTilFrukt('banan')" src="img/banan.gif" />
+    <div id="fruktMelding"></div>
+</body>
+</html>
+<script src="main.js"></script>
+<script src="sekk.js"></script>
+<script src="pluss.js"></script>
+<script src="kristianjava.js"></script>
+<script src="feedback.js"></script>
